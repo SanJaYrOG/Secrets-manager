@@ -16,9 +16,9 @@ provider "aws" {
   
 # }
 
-data "aws_secretsmanager_secret" "by-arn" {
-  arn = "arn:aws:secretsmanager:me-south-1:978222968597:secret:SanjaySecret-1-CrTLFe"
-}
+# data "aws_secretsmanager_secret" "by-arn" {
+#   arn = "arn:aws:secretsmanager:me-south-1:978222968597:secret:SanjaySecret-1-CrTLFe"
+# }
 
 resource "aws_instance" "secrets" {
   ami = "ami-0ef669c57b73af73b"
